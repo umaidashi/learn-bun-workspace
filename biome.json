@@ -3,6 +3,14 @@
   "organizeImports": {
     "enabled": true
   },
+  "linter": {
+    "rules": {
+      "recommended": true,
+      "style": {
+        "noParameterAssign": "warn"
+      }
+    }
+  },
   "formatter": {
     "enabled": true,
     "indentStyle": "space"
