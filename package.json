@@ -1,5 +1,8 @@
 {
-	"name": "learn-bun-workspace",
-	"version": "0.0.1",
-	"workspaces": ["services/*", "packages/*"]
+  "name": "learn-bun-workspace",
+  "version": "0.0.1",
+  "workspaces": ["services/*", "packages/*"],
+  "devDependencies": {
+    "@biomejs/biome": "1.6.4"
+  }
 }
