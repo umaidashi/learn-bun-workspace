@@ -1,5 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
+import { type MetaFunction, useLoaderData } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,7 +8,7 @@ export const meta: MetaFunction = () => {
 };
 
 export const loader = async () => {
-  const data = await fetch("http://localhost:8787/posts");
+  const data = await fetch(`${process.env.API_URL}/posts`);
   return data.json();
 };
 
